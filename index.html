@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/tablet.css" type="text/css" />
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" />
   </head>
   <body>
     <header class="wrapper">
@@ -31,7 +33,7 @@
             <p>En plein centre-ville ou en pleine nature</p>
             <form>
                 <label><i class="fa-solid fa-location-dot"></i></label>
-                <input type="text" placeholder="Marseille, France">
+                <input id="inputsearch" type="text" placeholder="Marseille, France">
                 <button>
                     <span class="desktop">Rechercher</span>
                 </button>
@@ -67,15 +69,15 @@
                 <a href="#">Animaux autorisés</a>
               </li>
             </ul>
-            <span class="filters-info">
-              <div>
-              <i class="fa-solid fa-circle-info"></i> 
-              </div>
-              </span>
-              <div class="text">
-              <p>Plus de 500 logements sont disponibles dans cette ville</p>
-              </div> 
+            
         </section>
+
+        <div class="text" id="information">
+          <span class="filters-info">
+            <i class="fa-sharp fa-solid fa-info"></i> 
+          </span>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div> 
 
     </header>
     <main class="wrapper">

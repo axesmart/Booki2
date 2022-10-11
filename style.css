@@ -63,10 +63,27 @@ header #navigation nav a:hover {
   border-top: 2px solid #0065fc;
 }
 
+form {
+  margin-top: 15px;
+}
+
 /*Searchform*/
 #searchform {
   margin-bottom: 45px;
 }
+
+#searchform .fa-location-dot {
+  background-color: #f2f2f2;
+  padding: 11px;
+  border-radius: 12px 0 0 12px;
+  margin-right: -4px;
+}
+
+#inputsearch {
+  padding: 9px;
+  border: 1px solid #f2f2f2;
+}
+
 /*Section Filters**/
 #filters {
   display: flex;
@@ -118,6 +135,22 @@ header #navigation nav a:hover {
   /* display: inline; */
   padding: 0 16px;
   font-weight: 700;
+}
+
+#information {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#information span {
+  margin-right: 12px;
+}
+
+#information span i {
+  color: #0065fc;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 3px 8px;
 }
 
 /****MAIN *****/
@@ -276,68 +309,17 @@ img {
   padding: 10px;
 }
 
-/****MEDIA QUERIES *****/
-@media screen and (max-width: 992px) {
-  /****HEADER *****/
-  header #navigation {
-    flex-direction: column;
-  }
-  header #navigation nav a:hover {
-    border-top: transparent;
-    border-bottom: 2px solid #0065fc;
-  }
-
-  /****MAIN *****/
-
-  /****ACTIVITES***/
-  .cardContener {
-    flex-wrap: wrap;
-    gap: 16px;
-    height: auto;
-  }
-  .simpleCardContainer {
-    width: 31%;
-    height: 220px;
-  }
-  .doubleCardContainer {
-    flex-direction: row;
-    width: 65%;
-    height: 220px;
-    gap: 16px;
-  }
-  .carte {
-    height: 100%;
-  }
+.fa-circle-info {
+  background-color: white;
 }
-
-@media screen and (max-width: 768px) {
-  .cardContener {
-    flex-direction: column;
-    gap: 25px;
-    height: auto;
-  }
-
-  .simpleCardContainer,
-  .doubleCardContainer {
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 25px;
-    height: auto;
-  }
-  .carte {
-    width: 100%;
-    height: 250px;
-  }
-}
-.fa-circle-info{
-
-background-color:white;
-}
-button{
-  color:white;
+button {
+  color: white;
   background-color: #0065fc;
-  border-radius: 5px;
-  width:100px;
+  border-radius: 0 12px 12px 0;
+  width: 100px;
+  padding: 9px;
+  border: 1px solid #f2f2f2;
+  margin-left: -6px;
 }
 footer {
   padding-left: 30px;
@@ -370,24 +352,6 @@ footer {
   padding: 5px 0;
 }
 
-
 .footer__container li a:hover {
   color: var(--blue);
 }
-/*************************************************************************************
-************************************ MEDIA QUERIES ***********************************
-*************************************************************************************/
- @media screen and (max-width: 992px) {
-  .footer__container {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  .menu__footer{
-  width: 48%;
-}
-} 
-@media screen and (max-width: 768px) {
-  .footer__container {
-    flex-direction: column;
-  }
-} 

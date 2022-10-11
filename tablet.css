@@ -1,0 +1,44 @@
+@media screen and (max-width: 992px) {
+  /****HEADER *****/
+  header #navigation {
+    flex-direction: column;
+  }
+  header #navigation nav a:hover {
+    border-top: transparent;
+    border-bottom: 2px solid #0065fc;
+  }
+
+  /****MAIN *****/
+
+  #hebergements {
+    flex-direction: column-reverse;
+  }
+
+  /****ACTIVITES***/
+  .cardContener {
+    flex-wrap: wrap;
+    gap: 16px;
+    height: auto;
+  }
+  .simpleCardContainer {
+    width: 31%;
+    height: 220px;
+  }
+  .doubleCardContainer {
+    flex-direction: row;
+    width: 65%;
+    height: 220px;
+    gap: 16px;
+  }
+  .carte {
+    height: 100%;
+  }
+
+  .footer__container {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .menu__footer {
+    width: 48%;
+  }
+}
