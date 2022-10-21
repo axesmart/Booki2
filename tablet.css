@@ -41,4 +41,34 @@
   .menu__footer {
     width: 48%;
   }
+  #navigation {
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+  #navigation .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  #navigation nav {
+    width: 100%;
+    justify-content: space-around;
+    padding-right: 0;
+  }
+  #navigation nav a {
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    border-bottom: 2px solid #d9d9d9;
+  }
+  #navigation nav a:hover {
+    border: none;
+    color: #0065fc;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid #0065fc;
+  }
 }

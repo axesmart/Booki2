@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Titre du site-->
     <title>Booki.com</title>
     <!--Fontawesome CDN-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/tablet.css" type="text/css" />
-    <link rel="stylesheet" href="css/mobile.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/tablet.css" type="text/css">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css">
   </head>
   <body>
     <header class="wrapper">
@@ -28,18 +24,29 @@
                 <a href="#activites">Activités</a>  
             </nav>
         </div>
-        <section id="searchform">
-            <h1>Trouvez votre hébergement pour de vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form>
-                <label><i class="fa-solid fa-location-dot"></i></label>
-                <input id="inputsearch" type="text" placeholder="Marseille, France">
-                <button>
-                    <span class="desktop">Rechercher</span>
-                </button>
-            </form>
+        <section id="searchform" class="wrapperMargin">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+          <form>
+            <label for="searchCity">
+              <i class="fa-solid fa-location-dot"></i>
+            </label>
+            <input
+              type="text"
+              id="searchCity"
+              name="searchCity"
+              placeholder="Marseille, France"
+            />
+            <button>
+              <span class="desktopSearch">Rechercher</span>
+              <span class="mobileSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </button>
+          </form>
         </section>
-        <section id="filters">
+
+        <section id="filters" class="wrapperMargin">
             <div class="title">
               <h2>Filtres</h2>
             </div>
@@ -69,21 +76,20 @@
                 <a href="#">Animaux autorisés</a>
               </li>
             </ul>
-            
         </section>
-
+        <div class="wrapperMargin"><!--modification apres soutenance-->
         <div class="text" id="information">
           <span class="filters-info">
             <i class="fa-sharp fa-solid fa-info"></i> 
           </span>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div> 
-
+      </div><!--modification apres soutenance-->
     </header>
     <main class="wrapper">
       <!--Hébergements-->
-        <section id="hebergements">
-          <div class="city">
+        <div id="hebergements" class="wrapper">
+          <article class="city wrapperMargin">
             <div class="titre">
               <h2>Hébergements à Marseille</h2>
             </div>
@@ -200,8 +206,8 @@
             <div class="more">
               <a href="#">Afficher plus</a>
             </div>
-          </div>
-          <div class="popular">
+          </article>
+          <aside class="popular wrapperMargin">
             <div class="titre">
               <h2>Les plus populaires</h2>
               <i class="fa-solid fa-star"></i>
@@ -225,9 +231,9 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a href="#" class="card">  <!--modi-->
                 <div class="image">
-                  <img src="images/hebergements/4_small/image8.jpg" alt="">
+                  <img src="images/hebergements/4_small/image8.jpg"    alt="">
                 </div>
                 <div class="content">
                   <div class="textContent">
@@ -262,10 +268,10 @@
                 </div>
               </a>
             </div>
-          </div>
-        </section>      
+          </aside>
+        </div>      
       <!--Activités-->
-      <section id="activities" class="wrapper">
+      <section id="activities" class="wrapper wrapperMargin">
         <h3>Activités à Marseille</h3>
         <div class="cardContener">
             <div class="simpleCardContainer">
@@ -282,11 +288,13 @@
                     <div class="contenu">
                         <h3>Fort de Pomègues</h3>
                     </div>
-                </a>
+                </a>   <!-- modification-->
+                <div class="thirdcardcontainer">
                 <a href="#" class="carte card__item--3">
                     <img src="images/activites/3_medium/image3.jpg" alt="">
                     <div class="contenu">
                         <h3>îles du Frioul</h3>
+                      </div>
                     </div>
                 </a>
             </div>       
@@ -298,19 +306,21 @@
                     </div>
                 </a>
             </div>
-            <div class="doubleCardContainer">
+            <div class="fifthCardContainer">
                 <a href="#" class="carte card__item--5">
-                    <img src="/Users/chatel/Desktop/booki/images/activites/3_medium/image5.jpg" alt="">
+                    <img src="images/activites/3_medium/image5.jpg" alt=""> <!--j'ai oublié de raccourcir le lien img apres soutenance-->
                     <div class="contenu">
-                        <h3>Notre Dame de la Garde</h3>
+                        <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                     
                 </a>
+                <div class="sixthcardcontainer">
                 <a href="#" class="carte card__item--6">
-                    <img src="/Users/chatel/Desktop/booki/images/activites/3_medium/image6.jpg" alt="">
+                    <img src="images/activites/3_medium/image6.jpg" alt=""> <!--j'ai oublié de raccourcir le lien img apres soutenance-->
                     <div class="contenu">
                         <h3>Parc Longchamp</h3>
                     </div>
+                  </div>
                 </a>
             </div>  
 
@@ -321,7 +331,7 @@
     
     <footer>
        <!--GLOBAL__WRAPPER-->
-       <div class="footer__container global__wrapper wrapper">
+       <div class="footer__container wrapperMargin wrapper">
         <div class="menu__footer">
           <h4>A Propos</h4>
           <ul>
